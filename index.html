@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>Quick – Website UI Kit (FREE)</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">使用Coding Pages托管网站
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        We use cookies so that our themes work for you. By using our website, you agree to our use of cookies.
+                    </p>
+                    <!-- Buttons -->
+                    <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <span class="navbar-brand">
+                <img alt="Image placeholder" src="./5@2x.png" id="navbar-logo"><span>货安通车辆GPS追踪系统</span>
+            </span>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">产品</a>
+                        <div class="dropdown-menu dropdown-menu-single">
+                            <a href="index.html" class="dropdown-item">xxx</a>
+                            <a href="index.html" class="dropdown-item">xxx</a>
+                            <a href="index.html" class="dropdown-item">xxx</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">服务</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">关于我们</a>
+                    </li>
+                    <li class="nav-item ">
+                        <span class="nav-link" >服务热线：4008888888</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+     <!-- Main content -->
+     <section class="slice py-7 img">
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
+                    <!-- Image -->
+                    <figure class="w-100">
+                        <!-- <img alt="Image placeholder" src="./img/bj.png" class="img-fluid mw-md-120"> -->
+                    </figure>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
+                    <!-- Heading -->
+                    <h1 class="display-4 text-center text-md-left mb-3">
+                        车辆运输全程可视化 <strong class="text-primary">监控服务</strong>
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-center text-md-left text-muted">
+                        智能分析 违规预警 安全稳定省心
+                        <br/>
+                        One stop enterprise visualization supervision vehicle
+                    </p>
+                    <!-- Buttons -->
+                    <div class="text-center text-md-left mt-5">
+                        <a href="#" class="btn btn-primary btn-icon" target="_blank">
+                            <span class="btn-inner--text">联系我们</span>
+                            <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                        <!-- <a href="#" class="btn btn-neutral btn-icon d-none d-lg-inline-block" target="_blank">联系我们</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container">
+            <div class="py-6">
+                            <!-- Title -->
+            <!-- Section title -->
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    <span class="badge badge-soft-success badge-pill badge-lg">
+                        企业货运管理面临困境
+                    </span>
+                    <h2 class=" mt-4">Dilemma</h2>
+                    <div class="mt-2">
+                        <!-- <p class="lead lh-180">Use Atomic Design to build components, sections and, then, pages.</p> -->
+                    </div>
+                </div>
+            </div>
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">困境</h5>
+                        <p class="lead my-4">
+                            Dilemma
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-2">
+                                <!-- <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0">Perfect for modern startups</span>
+                                    </div>
+                                </div> -->
+                            </li>
+                            <!-- <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-store-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0">Ready to be customized</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card mb-0 mr-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="Image placeholder" src="./img/banner1@2x.png" class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="./img/icon11@2x.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">纸质化办公</h5>
+                            <p class="text-muted mb-0">工作效率低，用车人纸质申请，找领导签字，流程繁琐，审批时间长，无法及时满足用车需求。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="./img/icon15@2x.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">车辆调配难</h5>
+                            <p class="text-muted mb-0">耽误业务进程用车实况无法及时掌控；用车信息传递失真；用车人、管理员、司机三方频繁沟通。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="./img/icon13@2x.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">车务信息繁琐</h5>
+                            <p class="text-muted mb-0">管理效率低，公车的日常车务信息繁琐，数据记录繁杂，车辆信息难维护，车辆较多的企业在车务管理上非常困难。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    <span class="badge badge-soft-success badge-pill badge-lg">
+                        系统功能
+                    </span>
+                    <h2 class=" mt-4">System Function</h2>
+                    <div class="mt-2">
+                        <!-- <p class="lead lh-180">Use Atomic Design to build components, sections and, then, pages.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="./img/位图@2x(1).png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">实时监控</h5>
+                            <p class="text-muted mb-0">多人多车同时实时监控。查看车辆实时位置，随时查看行驶轨迹，行驶速度，行驶公里数，行驶时长等。 设置设备电子围栏，进出围栏及时提醒。设置路径围栏，合理规划行驶路径，防止路线偏离。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="./img/位图@2x(2).png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">物流运单协同</h5>
+                            <p class="text-muted mb-0">自动绑定物流车辆系统，实现出发、到达、路线偏移进行自动预警，及运输路线的路况、天气对司机进行提醒；协同管理者对运输过程中的运单路线与实际路线、填报司机的实时动态比对</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="./img/位图@2x(3).png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">安装&运维</h5>
+                            <p class="text-muted mb-0">坚持全自营、本地化模式。优质的数据100%依赖于专业的安装，杜绝安装不规范引发的大量无效数据，利用自研业务支撑系统，关联客户管理、车辆管理、通过闭环管理将安全隐患跟踪到底</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container">
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">高精度定位终端，全方位用车场景覆盖</h5>
+                        <p class="lead my-4">
+                            货安通GPS追踪系统专门提供从车辆管理、调度派单、定位监控、视频监控、司机接单到后面的财务结算、违章查询、 统计分析的整套系统服务。系统满足公务、货运、物流、等不同车队场景需求，帮助车队降低车辆危险性、提升管理效率、监控司机工作情况、直观统计单车效益。
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="h6 mb-0">查看演示</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card mb-0 mr-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="Image placeholder" src="./img/home_poster_1@2x.png" class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <h5 class="h3">访客定位导航</h5>
+                        <p class="lead my-4">
+                            系统对接工厂访客系统，为访客提供预约登记、身份识别、厂区定位导航、AR实景导航、室内定位导航等一站式引导服务。
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a  href="#" class="h6 mb-0">查看演示</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-store-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0">Ready to be customized</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-store-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0">Designed for every devices</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-0 ml-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="Image placeholder" src="./img/home_poster_3@2x.png" class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">助力决策</h5>
+                        <p class="lead my-4">
+                            公务用车管理系统提供丰富的数据报表和分析功能，帮助管理人员全面了解车辆使用情况、费用支出和维护情况，为决策提供有力支持。基于数据的分析和预测，可以帮助管理人员合理规划用车资源，降低决策成本。
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="h6 mb-0">查看演示</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card mb-0 mr-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="Image placeholder" src="./img/home_poster_2@2x.png" class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg bg-section-dark pt-5 pt-lg-8">
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <!-- Container -->
+        <div class="container position-relative zindex-100">
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <div class="mt-4 mb-6">
+                            <h2 class="h1 text-white">
+                               关于我们
+                            </h2>
+                            <h4 class="text-white mt-3">About us</h4>
+                            <!-- Play button -->
+                            <div class="card-body p-2" style="width: 100%;text-align: center;">
+                                <img alt="Image placeholder" src="./img/位图s@2x.png" class="img-fluid shadow rounded">
+                            </div>
+                            <h6 class="text-white mt-3">运城市永德伟业科技有限公司是运城市永德伟业科技有限公司旗下品牌。运城市永德伟业科技有限公司在2005年01月26日创办，公司位于运城市人民北路147号（环球财富大厦9905室）；主要经营领域有软件产品、工业自动化系统研发、销售、安装及售后服务、计算机软硬件与耗材的销售及服务、信息系统集成与服务。</h6>
+                            <a href="#" class="btn btn-primary btn-icon mt-4">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="slice pt-0">
+        <div class="container position-relative zindex-100">
+            <div class="row">
+                <div class="col-xl-4 col-sm-6 mt-n7">
+                    <div class="card">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-warning badge-pill">New</span>
+                            </div>
+                            <div class="pl-4">
+                                <h5 class="lh-130">Listen to the nature</h5>
+                                <p class="text-muted mb-0">
+                                    Design made simple with a clean and smart HTML markup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mt-sm-n7">
+                    <div class="card">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-success badge-pill">Tips</span>
+                            </div>
+                            <div class="pl-4">
+                                <h5 class="lh-130">Rules not to follow</h5>
+                                <p class="text-muted mb-0">
+                                    Design made simple with a clean and smart HTML markup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-6 mt-xl-n7">
+                    <div class="card">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-danger badge-pill">Update</span>
+                            </div>
+                            <div class="pl-3">
+                                <h5 class="lh-130">Beware the water</h5>
+                                <p class="text-muted mb-0">
+                                    Design made simple with a clean and smart HTML markup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-sm-6">
+                    <div class="card">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-warning badge-pill">New</span>
+                            </div>
+                            <div class="pl-4">
+                                <h5 class="lh-130">Listen to the nature</h5>
+                                <p class="text-muted mb-0">
+                                    Design made simple with a clean and smart HTML markup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="card">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-success badge-pill">Tips</span>
+                            </div>
+                            <div class="pl-4">
+                                <h5 class="lh-130">Rules not to follow</h5>
+                                <p class="text-muted mb-0">
+                                    Design made simple with a clean and smart HTML markup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-6">
+                    <div class="card">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-danger badge-pill">Update</span>
+                            </div>
+                            <div class="pl-3">
+                                <h5 class="lh-130">Beware the water</h5>
+                                <p class="text-muted mb-0">
+                                    Design made simple with a clean and smart HTML markup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="slice slice-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="badge badge-primary badge-pill">公司分布</span>
+                    <h5 class="lh-180 mt-4 mb-6">货安通科技有限公司</h5>
+                </div>
+            </div>
+            <!-- Features -->
+            <div class="row mx-lg-n4">
+                <!-- Features - Col 1 -->
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                    <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">陕西省西安市(总公司)</span>
+                                <p class="text-sm text-muted mb-0">
+                                    陕西省西安市未央区凤城八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                     <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">江苏省苏州市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    江苏省苏州市八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                   <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">湖南省宜昌市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    湖南省宜昌市八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle text-white mr-4">
+                                   <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">湖北省黄冈市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    湖北省黄冈市八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                    <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">江苏省南京市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    江苏省南京市八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle text-white mr-4">
+                                     <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">安徽省合肥市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    安徽省合肥市八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features - Col 3 -->
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                      <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">上海市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    上海市凤城八路XXX号
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                    <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">山东省青岛市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    山东省青岛市
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle  text-white mr-4">
+                                        <svg t="1718087770486" class="icon" style="width: 37px;height: 2.2rem" viewBox="0 0 1039 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13204" width="200" height="200"><path d="M520.677966 966.146893l-19.284369-11.570622c-15.427495-7.713748-358.689266-214.056497-366.403013-457.039548-3.856874-100.278719 34.711864-194.772128 104.135593-268.052731 73.280603-75.20904 175.487759-119.563089 281.551789-119.563088 212.12806 0 385.687382 173.559322 385.687382 385.687382 0 235.269303-350.975518 447.397363-366.403013 457.039548l-19.284369 13.499059z m0-777.160076c-84.851224 0-165.845574 34.711864-225.627119 96.421846-55.92467 57.853107-84.851224 133.062147-82.922787 212.12806 5.785311 169.702448 239.126177 333.619586 308.549906 379.902072 102.207156-65.566855 308.549906-229.483992 308.549906-377.973635 0-173.559322-138.847458-310.478343-308.549906-310.478343z" fill="#388CEB" p-id="13205"></path><path d="M520.677966 632.527307c-96.421846 0-173.559322-77.137476-173.559322-173.559322s77.137476-173.559322 173.559322-173.559322 173.559322 77.137476 173.559322 173.559322c0 94.493409-77.137476 173.559322-173.559322 173.559322z m0-269.981168c-53.996234 0-96.421846 42.425612-96.421845 96.421846s42.425612 96.421846 96.421845 96.421846 96.421846-42.425612 96.421846-96.421846-42.425612-96.421846-96.421846-96.421846z" fill="#E78E00" p-id="13206"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">河南省郑州市</span>
+                                <p class="text-sm text-muted mb-0">
+                                    河南省郑州市
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark">
+            <!-- SVG shape -->
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class=" fill-section-secondary">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <!-- Footer -->
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <!-- Theme's logo -->
+                        <a href="index.html">
+                            <img alt="Image placeholder" src="./5@2x.png" id="footer-logo">
+                        </a>
+                        <!-- Webpixels' mission -->
+                        <p class="mt-4 text-sm opacity-8 pr-lg-4">货安通车辆GPS追踪系统</p>
+                        <!-- Social -->
+                        <ul class="nav mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#" target="_blank">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Account</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Billing</a></li>
+                            <li><a href="#">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">About</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2020 <a href="#" class="font-weight-bold" target="_blank">XXXX</a>.货安通车辆GPS追踪系统
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Terms
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+</body>
+
+</html>
